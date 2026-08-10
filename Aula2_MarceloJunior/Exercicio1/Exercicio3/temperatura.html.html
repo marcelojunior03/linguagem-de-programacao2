@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Temperatura</title>
+</head>
+
+<body>
+
+    <h1>Conversor de Temperatura</h1>
+
+    <form action="temperatura" method="post">
+
+        <label>Temperatura:</label>
+
+        <input type="text" name="temperatura">
+
+        <br><br>
+
+        <h3>Escolha a conversão:</h3>
+
+        <input type="radio"
+               name="operacao"
+               value="C_F"
+               checked>
+
+        Celsius → Fahrenheit
+
+        <br>
+
+        <input type="radio"
+               name="operacao"
+               value="F_C">
+
+        Fahrenheit → Celsius
+
+        <br>
+
+        <input type="radio"
+               name="operacao"
+               value="C_K">
+
+        Celsius → Kelvin
+
+        <br>
+
+        <input type="radio"
+               name="operacao"
+               value="K_C">
+
+        Kelvin → Celsius
+
+        <br>
+
+        <input type="radio"
+               name="operacao"
+               value="F_K">
+
+        Fahrenheit → Kelvin
+
+        <br>
+
+        <input type="radio"
+               name="operacao"
+               value="K_F">
+
+        Kelvin → Fahrenheit
+
+        <br><br>
+
+        <input type="submit" value="Converter">
+
+    </form>
+
+</body>
+
+</html>

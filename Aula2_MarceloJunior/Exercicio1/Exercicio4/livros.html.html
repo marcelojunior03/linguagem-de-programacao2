@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Livraria</title>
+
+    <style>
+
+        .livro {
+            display: inline-block;
+            width: 250px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        .livro img {
+            width: 150px;
+            height: 200px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Livraria</h1>
+
+    <div class="livro">
+
+        <img src="img/livro1.jpg">
+
+        <h2>Livro 1</h2>
+
+        <p>R$ 50,00</p>
+
+        <form action="pedido" method="post">
+
+            <input type="hidden"
+                   name="livro"
+                   value="Livro 1">
+
+            <input type="hidden"
+                   name="preco"
+                   value="50.00">
+
+            <input type="hidden"
+                   name="imagem"
+                   value="img/livro1.jpg">
+
+            <input type="submit"
+                   value="Comprar">
+
+        </form>
+
+    </div>
+
+
+    <div class="livro">
+
+        <img src="img/livro2.jpg">
+
+        <h2>Livro 2</h2>
+
+        <p>R$ 80,00</p>
+
+        <form action="pedido" method="post">
+
+            <input type="hidden"
+                   name="livro"
+                   value="Livro 2">
+
+            <input type="hidden"
+                   name="preco"
+                   value="80.00">
+
+            <input type="hidden"
+                   name="imagem"
+                   value="img/livro2.jpg">
+
+            <input type="submit"
+                   value="Comprar">
+
+        </form>
+
+    </div>
+
+
+    <div class="livro">
+
+        <img src="img/livro3.jpg">
+
+        <h2>Livro 3</h2>
+
+        <p>R$ 100,00</p>
+
+        <form action="pedido" method="post">
+
+            <input type="hidden"
+                   name="livro"
+                   value="Livro 3">
+
+            <input type="hidden"
+                   name="preco"
+                   value="100.00">
+
+            <input type="hidden"
+                   name="imagem"
+                   value="img/livro3.jpg">
+
+            <input type="submit"
+                   value="Comprar">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

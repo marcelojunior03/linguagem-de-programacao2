@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Medidas</title>
+</head>
+
+<body>
+
+    <h1>Conversor de Medidas</h1>
+
+    <form action="conversao" method="post">
+
+        <label>Medida:</label>
+
+        <input type="text"
+               name="medida">
+
+        <br><br>
+
+        <h3>Escolha a conversão:</h3>
+
+        <input type="radio"
+               name="operacao"
+               value="milhasKm"
+               checked>
+
+        Milhas para Quilômetros
+
+        <br>
+
+        <input type="radio"
+               name="operacao"
+               value="kmMilhas">
+
+        Quilômetros para Milhas
+
+        <br>
+
+        <input type="radio"
+               name="operacao"
+               value="pesMetros">
+
+        Pés para Metros
+
+        <br>
+
+        <input type="radio"
+               name="operacao"
+               value="metrosPes">
+
+        Metros para Pés
+
+        <br><br>
+
+        <input type="submit"
+               value="Converter">
+
+    </form>
+
+</body>
+
+</html>
