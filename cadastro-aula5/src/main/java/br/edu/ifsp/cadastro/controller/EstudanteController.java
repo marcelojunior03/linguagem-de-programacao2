@@ -41,4 +41,14 @@ public class EstudanteController {
 		Estudante estudante = manager.find(Estudante.class, id);
 		return estudante;
 	}
+	
+	public void alteraEstudante(Long id, String nome, Character sexo, Boolean pcd, BigDecimal ira) {
+		transaction.begin();
+		Estudante estudante = manager.find(Estudante.class, id);
+		estudante.setNome(nome);
+		estudante.setSexo(sexo);
+		estudante.setPcd(pcd);
+		estudante.setIra(ira);
+		transaction.commit();
+	}
 }
