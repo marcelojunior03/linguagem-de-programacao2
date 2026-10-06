@@ -98,7 +98,7 @@ public class EstudanteController extends HttpServlet {
 	
 	@SuppressWarnings("unchecked")
 	public List<Estudante> consultaEstudantes() {
-		Query query = manager.createQuery("select 1 from Estudante 1 inner join fetch 1.curso order by 1.id");
+		Query query = manager.createQuery("select e from Estudante e inner join fetch e.curso order by e.id");
 		List<Estudante> Estudantes = query.getResultList();
 		return Estudantes;
 	}
